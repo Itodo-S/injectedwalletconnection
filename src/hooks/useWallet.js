@@ -51,12 +51,12 @@ const useWallet = () => {
       });
     }
 
-    return () => {
-      if (window.ethereum) {
-        window.ethereum.removeListener("accountsChanged", () => {});
-        window.ethereum.removeListener("chainChanged", () => {});
-      }
-    };
+    // return () => {
+    //   if (window.ethereum) {
+    //     window.ethereum.removeListener("accountsChanged", () => {});
+    //     window.ethereum.removeListener("chainChanged", () => {});
+    //   }
+    // };
   }, []);
 
   return {
